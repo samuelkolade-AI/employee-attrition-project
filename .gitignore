@@ -1,0 +1,45 @@
+# Virtual environment - MUST be ignored
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Data files
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Trained models
+models/experiments/*
+models/production/*.pkl
+models/production/*.joblib
+!models/experiments/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+airflow/logs/*
+
+# Database
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+
+# OS files
+.DS_Store
+Thumbs.db
